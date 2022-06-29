@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    /*styling for numbered header data cell*/
+    .col-header {
+      display: flex;
+      flex-direction: column;
+    }
+    /*styling for the first cell for positioning text bottom side of cell*/
+    .col-header-origin {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: none;
+    }
+    /*Table header and tabledata size and border style and text alignment*/
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      height: 39px;
+      text-align: center;
+      width: 90px;
+    }
+    /*table border styling*/
+    table {
+      border-top: 4px solid rgb(165, 163, 163);
+      border-left: 4px solid rgb(190, 189, 189);
+      border-bottom: 4px solid rgb(29, 28, 28);
+      border-right: 4px solid rgb(20, 20, 20);
+      border-collapse: collapse;
+    }
+    /*text styling and direction for lunch data cell*/
+    .text-up-down {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 23px;
+      font-weight: bold;
+    text-transform: uppercase;
+    } 
+    /*caption*/
+    caption{
+        font-size: 23px;
+      font-weight: bold;
+      margin: 15px;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        Time Table
+      </caption>
+      <tr>
+        <th class="col-header-origin"><div>Day/period</div></th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">I</span>
+            <span class="col-num">9:30-10:20</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">II</span>
+            <span class="col-num">10:20-11:10</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">III</span>
+            <span class="col-num">11:10-12:00</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">12:00-12:40</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">IV</span>
+            <span class="col-num">12:40-1:30</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">V</span>
+            <span class="col-num">1:30-2:20</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">VI</span>
+            <span class="col-num">2:30-3:10</span>
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <span class="col-num">VII</span>
+            <span class="col-num">3:10-4:00</span>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <td>Eng</td>
+        <td>Mat</td>
+        <td>Che</td>
+        <td rowspan="6" class="text-up-down">Lunch</td>
+        <td colspan="3">LAB</td>
+        <td>Phy</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td colspan="3">LAB</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td>Mat</td>
+        <td>SPORTS</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>Mat</td>
+        <td>phy</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td colspan="3">LIBRARY</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>Phy</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td colspan="3">LAB</td>
+        <td>Mat</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td colspan="3">LAB</td>
+        <td>Mat</td>
+        <td>Che</td>
+        <td>Eng</td>
+        <td>Phy</td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td>Eng</td>
+        <td>Che</td>
+        <td>Mat</td>
+        <td colspan="3">SEMINAR</td>
+        <td>SPORTS</td>
+      </tr>
+    </table>
+  </body>
+</html>
